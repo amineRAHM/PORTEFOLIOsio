@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #007bff;
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc4b?q=80&w=2000') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+footer {
+    margin-top: 50px;
+}
