@@ -6,22 +6,36 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    color: #ffffff;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.8) 1px, transparent 2px),
+        radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.7) 1.5px, transparent 3px),
+        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.6) 1px, transparent 2px),
+        radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.9) 2px, transparent 4px),
+        linear-gradient(to bottom, #000c1d, #000000);
+    background-size: 100px 100px, 150px 150px, 200px 200px, 250px 250px, 100% 100%;
+    background-attachment: fixed;
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc4b?q=80&w=2000') no-repeat center center/cover;
+    background: transparent;
     padding: 100px 0;
 }
 
 .card {
     transition: transform 0.3s ease;
     border-radius: 12px;
+    background-color: var(--card-bg);
+    color: #ffffff;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.text-muted {
+    color: #cccccc !important;
 }
 
 .text-primary {
